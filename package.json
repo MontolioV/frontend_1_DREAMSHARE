@@ -1,0 +1,26 @@
+{
+  "name": "frontend_simple_1",
+  "version": "1.0.0",
+  "description": "Simple html/css/js frontend project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MontolioV/frontend_simple_1.git"
+  },
+  "author": "MontolioV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MontolioV/frontend_simple_1/issues"
+  },
+  "homepage": "https://github.com/MontolioV/frontend_simple_1#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^4.0.0"
+  }
+}
