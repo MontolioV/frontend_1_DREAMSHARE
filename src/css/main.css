@@ -19,6 +19,7 @@ body {
 .btn {
     border-radius: 40px;
     text-decoration: none;
+    text-align: center;
 }
 a.btn:link, a.btn:visited {
     color: white;
@@ -127,6 +128,13 @@ a.btn:link, a.btn:visited {
 .site-name-label {
     font-weight: bold;
     font-size: 20px;
+}
+@media all and (max-width: 599px) {
+    .site-name-label {
+        width: 100%;
+        text-align: center;
+        margin-top: 95px;
+    }
 }
 
 .explanation-container {
