@@ -54,14 +54,13 @@ a.btn:link, a.btn:visited {
 .btn-l.btn-hollow:link, .btn-l.btn-hollow:visited {
     color: #FF4E50;
 }
-@media all and (max-width: 599px) {
+@media all and (max-width: 629px) {
     .btn-l {
         width: 90%;
     }
 }
 
 .section-container {
-    max-width: 1100px;
     margin-top: 95px;
     margin-right: auto;
     margin-left: auto;
@@ -70,9 +69,9 @@ a.btn:link, a.btn:visited {
     color: #444444;
     text-align: center;
 }
-@media all and (max-width: 599px) {
+@media all and (min-width: 1200px) {
     .section-container {
-        max-width: 100%;
+        max-width: 1100px;
     }
 }
 
@@ -104,7 +103,7 @@ a.btn:link, a.btn:visited {
     padding: 40px;
     color: white;
 }
-@media all and (max-width: 599px) {
+@media all and (max-width: 629px) {
     .welcome-container {
         padding: 20px;
     }
@@ -128,7 +127,7 @@ a.btn:link, a.btn:visited {
     font-weight: bold;
     font-size: 20px;
 }
-@media all and (max-width: 599px) {
+@media all and (max-width: 629px) {
     .welcome-body {
         width: 280px;
     }
@@ -178,7 +177,12 @@ a.btn:link, a.btn:visited {
 .step-text {
     color: #E3E3E3;
 }
-@media all and (max-width: 599px) {
+@media all and (min-width: 630px) and (max-width: 1199px) {
+    .step-card {
+        flex: 1 1;
+    }
+}
+@media all and (max-width: 629px) {
     .step-card {
         height: 240px;
     }
@@ -201,15 +205,19 @@ a.btn:link, a.btn:visited {
 #partner-sec a {
     margin-top: 35px;
 }
-@media all and (max-width: 599px) {
+@media all and (min-width: 630px) and (max-width: 1199px) {
+    .person {
+        width: 40%;
+    }
+}
+@media all and (max-width: 629px) {
     .person {
         width: 70%;
     }
 }
 
 .gallery-container {
-    max-width: 1000px;
-    min-width: 990px;
+    min-width: 100%;
 }
 .gallery-item {
     position: relative;
@@ -227,17 +235,20 @@ a.btn:link, a.btn:visited {
     text-align: center;
 }
 .gallery-item-s {
-    width: 300px;
+    width: 30%;
     height: 310px;
 }
 .gallery-item-m {
-    width: 620px;
+    width: calc(60% + 20px);
     height: 310px;
 }
-@media all and (max-width: 599px) {
+@media all and (min-width: 1200px) {
     .gallery-container {
-        min-width: 100%;
+        max-width: 1000px;
+        min-width: 1200px;
     }
+}
+@media all and (max-width: 629px) {
     .gallery-item-s,.gallery-item-m {
         width: 100%;
         height: 120px;
@@ -259,7 +270,7 @@ a.btn:link, a.btn:visited {
     border-radius: 3px;
     padding: 15px 0 10px 13px;
 }
-@media all and (max-width: 599px) {
+@media all and (max-width: 629px) {
     .interests-inp {
         width: 100%;
     }
@@ -267,15 +278,21 @@ a.btn:link, a.btn:visited {
 
 
 .footer-delimiter {
-    margin: 100px 0 35px 0;
+    margin-top: 100px;
     height: 2px;
     background: #FF4E50;
 }
 footer {
-    margin: 0 250px 30px 250px;
+    padding: 35px 40px;
 }
 footer p {
     font-weight: bold;
+}
+.footer-container {
+    width: 100%;
+}
+.footer-container>* {
+    flex: 1 1;
 }
 .footer-label {
     font-size: 16px;
@@ -291,7 +308,6 @@ footer p {
 }
 .link-list li {
     min-width: 100%;
-    /*display: block;*/
 }
 .link-list li a:link, .link-list li a:visited {
     margin: 0 5px;
@@ -309,10 +325,15 @@ footer p {
     letter-spacing: 1px;
     color: #CCCCCC;
 }
-@media all and (max-width: 599px) {
-    footer {
-        margin: 30px 0;
+@media all and (min-width: 1200px) {
+    .footer-container {
+        width: 1100px;
     }
+    .logo-container {
+        flex: 2 2;
+    }
+}
+@media all and (max-width: 629px) {
     .footer-container > * {
         min-width: 100%;
         text-align: center;
