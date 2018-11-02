@@ -5,21 +5,22 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         clean: ['prod'],
         copy: {
-            main: {
+            filtered: {
                 files: [
                     {expand: true, flatten: true, src: ['src/*'], dest: 'prod', filter: 'isFile'},
                 ],
                 options: {
                     process: function (content, srcpath) {
                         return content.replace('<link rel="stylesheet" href="css/main.css">\n' +
-                            '    <link rel="stylesheet" href="css/flex.css">',
+                            '    <link rel="stylesheet" href="css/flex.css">\n' +
+                            '    <link rel="stylesheet" href="css/fonts.css">',
                             '<link rel="stylesheet" href="css/full.min.css">');
                     },
                 },
             },
-            img: {
+            not_filtered: {
                 files: [
-                    {expand: true, flatten: true, src: ['src/img/*'], dest: 'prod/img'},
+                    {expand: true, cwd: 'src', src: ['img/**', 'fonts/**'], dest: 'prod'},
                 ],
             },
         },
