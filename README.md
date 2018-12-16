@@ -4,6 +4,8 @@ https://www.figma.com/file/WEaZCpPAZYc3e5nOqXW8Ojrs/dreamshare-website-template-
 
 To compile production package run in project root:
 
+`npm install -g grunt-cli`
+
 `npm install`
 
 `grunt`
